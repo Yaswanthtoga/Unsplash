@@ -1,0 +1,90 @@
+.login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(167, 157, 157);
+
+    .loginContainer{
+        overflow: hidden;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        width: 40%;
+        background-color: #F9F9F9;
+        -webkit-box-shadow: 0px 4px 11px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 4px 11px -5px rgba(0,0,0,0.75);
+        box-shadow: 0px 4px 11px -5px rgba(0,0,0,0.75);
+        border-radius: 20px;
+
+        .left{
+            padding: 5px;
+            height: 100%;
+            flex: 1;
+            background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+            url("https://images.pexels.com/photos/1181325/pexels-photo-1181325.jpeg?auto=compress&cs=tinysrgb&w=600")center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1{
+                color: #FEFCF3;
+                font-size: 60px;
+                font-family: 'Sassy Frass', cursive;
+
+                span{
+                    font-family: 'Sassy Frass', cursive;
+                    color: red;
+                }
+            }
+            p{
+                color: #d0cdcd;
+                font-size: 11px;
+            }
+        }
+
+        .right{
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                input{
+                    width: 100%;
+                    border: none;
+                    padding: 5px;
+                    border-bottom: 1px solid gray;
+                    background-color: transparent;
+                }
+                button{
+                    border: none;
+                    padding: 5px 20px;
+                    background-color: teal;
+                    color: white;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+                margin-bottom: 20px;
+            }
+
+            span{
+                color: goldenrod;
+                cursor: pointer;
+                font-size: 12px;
+            }
+            .error{
+                color: red;
+                font-size: 12px;
+            }
+        }
+
+    }
+}

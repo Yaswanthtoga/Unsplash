@@ -1,0 +1,39 @@
+.main{
+    background-color: #fbf9f7;
+    height: 100%;
+    // width: 100vw;
+    padding: 10px 60px;
+
+    .addImage{
+        z-index: 9;
+    }
+
+    .mainContainer{
+        .masonryContainer{
+            width: 100%;
+            .imageList{
+                cursor: pointer;
+                img{
+                    border-radius: 20px;
+                }
+                .listItemBar{
+                    display: none;
+                    height: 50px;
+                    border-radius: 20px;
+                    .iconButton{
+                        float: right;
+                        position: absolute;
+                        height: 50px;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+                &:hover{
+                    .listItemBar{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
